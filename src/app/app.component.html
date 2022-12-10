@@ -1,0 +1,1305 @@
+<header id="header">
+    <div class="container-layout container-fluid px-4">
+        <div class="row justify-content-between">
+
+            <div id="icon-layout-javeriana" class="col-5 col-sm-3 col-lg-2">
+                <img id="icon-javeriana" src="../assets/icons/icon-javeriana-1.svg" alt="icon-javeriana">
+            </div>
+
+            <nav id="menu" class="col-3 col-lg-8">
+                <button id="toggle" class="col d-lg-none" (click)="toggleMenu()">
+                    <svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+
+                <ul id="menu-mobile" class="row">
+                    <li class="col-12 col-lg" (click)="toggleMenuClose()">
+                        <a (click)="scroll($event, 'inicio')">Inicio</a>
+                    </li>
+                    <li class="col-12 col-lg" (click)="toggleMenuClose()">
+                        <a (click)="scroll($event, 'informacion')">Información</a>
+                    </li>
+                    <li class="col-12 col-lg" (click)="toggleMenuClose()">
+                        <a (click)="scroll($event, 'invitados')">Invitados</a>
+                    </li>
+                    <li class="col-12 col-lg" (click)="toggleMenuClose()">
+                        <a (click)="scroll($event, 'cronograma')">Cronograma</a>
+                    </li>
+                    <li class="col-12 col-lg" (click)="toggleMenuClose()">
+                        <a (click)="scroll($event, 'equipos')">Equipos</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="button-register" class="col-3 col-lg-2 d-none d-lg-flex ">
+                <a id="button" target="_blank"
+                    href="https://www.youtube.com/channel/UCzAOlQg6W-maYx3irbSKWMw">Únete
+                    al evento</a>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<section id="general" class="w-100">
+
+    <article id="inicio">
+        <div class="container-layout container-fluid row py-5 px-5 w-100 justify-content-center">
+            <div id="information" class="col-md-11 col-lg-6 ">
+
+                <div id="title-layout" class="row px-2">
+                    <h1 id="title" class="col">SIMPOSIO <span>VID<span id="temp">IA</span></span></h1>
+                </div>
+
+                <div id="description-layout" class="row px-2">
+                    <p id="description" class="col px-1">
+                        Bienvenidos al Primer Simposio de inteligencia artificial aplicada a
+                        la salud, de la Pontificia Universidad Javeriana. Un evento virtual con expertos
+                        nacionales e internacionales con amplia experiencia en el campo.
+                    </p>
+
+                    <h5 id="date">19 y 20 Octubre 2022</h5>
+                </div>
+
+                <div id="icon-main-mobile-layout" class="row d-none justify-content-center">
+                    <img id="icon-main-mobile" src="../assets/icons/icon-main.svg">
+                </div>
+
+                <div id="button-layout" class="row justify-content-around">
+                    <div id="button-register-layout" class="col-lg-12 col-sm-6">
+                        <a id="button-register" target="_blank"
+                            href="https://teams.microsoft.com/l/meetup-join/19%3aqWc7Tv158Goi1uL8zlJgM9xc0XnbVpuZK_fdPZD4rY81%40thread.tacv2/1664331658659?context=%7b%22Tid%22%3a%22daf7990e-8a3f-409c-9b76-2a5475098000%22%2c%22Oid%22%3a%22899acdbf-5e0e-479c-a73a-46a85c2a0953%22%7d">Únete
+                            al evento</a>
+                    </div>
+
+                    <div id="button-moreInfo-layout" class="col-lg-12 col-sm-6">
+                        <a id="button-moreInfo" (click)="scroll($event, 'informacion')">Conoce más</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="icon-main-layout" class="col-6">
+                <img id="icon-main" src="../assets/icons/icon-main.svg">
+            </div>
+        </div>
+    </article>
+
+    <article id="informacion">
+        <div class="container-layout container-fluid py-5 px-5 row w-100 justify-content-center">
+
+            <div id="main-layout" class="col-xl-6 col-lg-5 col-11">
+                <div id="title-layout" class="row">
+                    <h1 id="title">¿Por qué participar en el Simposio <span>VIDIA?</span></h1>
+                </div>
+            </div>
+
+            <div id="description-layout" class="col-xl-6 col-lg-7 col-11">
+                <p id="description">
+                    La inteligencia artificial es un campo de las ciencias de la computación que busca resolver
+                    problemas por medio de la emulación del comportamiento del cerebro humano. Es un campo de alta
+                    relevancia hoy en día, ya que, gracias a técnicas como el aprendizaje de máquina o el aprendizaje
+                    profundo, se pueden dar soluciones a problemas de decisión, así como problemas de regresión del
+                    mundo real apoyándonos en las capacidades de cómputo de los dispositivos actuales. Este espacio de
+                    encuentro está dispuesto para comunicar y dar a conocer a la importancia y relevancia de esta
+                    temática en el ámbito de las ciencias de la salud, poniendo a su disposición los mejores expertos
+                    que darán a conocer su conocimiento y resultados de investigaciones. <a id="button-speakers"
+                        (click)="scroll($event, 'invitados')">Conoce a los invitados</a>
+                </p>
+            </div>
+        </div>
+
+        <div id="footer-information-layout" class="mt-2">
+            <div id="footer-icon-layout" class="container row justify-content-center">
+                <div id="icon-layout" class="row">
+
+                    <div id="icon-javeriana-layout" class="col">
+                        <img id="icon-javeriana" src="../assets/icons/icon-javeriana-2.svg">
+                    </div>
+
+                    <div id="icon-main-layout" class="col">
+                        <img id="icon-main" src="../assets/icons/icon-main.svg">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article id="invitados">
+        <div class="container-layout container-fluid py-5 px-3 w-100 justify-content-around">
+
+            <div id="title-layout" class="row">
+                <h1 id="title">EXPERTOS INVITADOS</h1>
+            </div>
+
+            <div id="speakers-layout" class="row justify-content-around mx-3">
+
+                <div class="card-container col-9 col-sm-5 col-md-5 col-lg-3 mx-1 my-4">
+                    <div class="card">
+                        <div class="f front">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/836628917275459654/1024886936197926962/foto-grande.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Andrea del Pilar Rueda Olarte, Ph.D.</h5>
+                                <p class="card-text">Profesora Asociada de la Pontificia Universidad Javeriana</p>
+                                <div class="more-info" (click)="rotate('0')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg></span>
+                                    <p>Mas información</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f back">
+                            <div class="card-back-body">
+                                <h5 class="card-title">Títulos Profesionales</h5>
+                                <ul>
+                                    <li>Ingeniera de Sistemas, Universidad Nacional de Colombia, Bogotá, Colombia.</li>
+                                    <li>Máster en Ingeniería de Sistemas y Computación, Universidad Nacional de
+                                        Colombia, Bogotá, Colombia.</li>
+                                    <li>Doctora en Ingeniería de Sistemas, y Computación, Universidad Nacional de
+                                        Colombia, Bogotá, Colombia. </li>
+                                </ul>
+
+                                <h5 class="card-title">Áreas de investigación</h5>
+                                <ul>
+                                    <li>Procesamiento y análisis de imágenes médicas, computación gráfica, visión por
+                                        computador, modelado matemático.</li>
+                                    <li>Simulación y visualización en Computación Gráfica.</li>
+                                </ul>
+
+                                <div class="more-info" (click)="rotate('0')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg></span>
+                                    <p>Volver</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container col-9 col-sm-5 col-md-5 col-lg-3 mx-1 my-4">
+                    <div class="card">
+                        <div class="f front">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/836628917275459654/1030149125842415696/unknown.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Federico Guilenea</h5>
+                                <p class="card-text">Profesor asociado de la universidad de Favaloro</p>
+                                <div class="more-info" (click)="rotate('1')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg></span>
+                                    <p>Mas información</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f back">
+                            <div class="card-back-body">
+                                <h5 class="card-title">Experiencia</h5>
+                                <ul>
+                                    <li>Universidad de Favaloro: Graduado de Ingeniería biomédica</li>
+                                    <li>Universidad de Favaloro: Doctorando en Ingeniería Biomédica</li>
+                                    <li>Becario doctoral en Ingeniería Biomédica en la Universidad Favaloro</li>
+                                </ul>
+                                <h5 class="card-title">Áreas de investigación</h5>
+                                <ul>
+                                    <li>Bioingeniería, deep learning, machine learning, AI aplicado a medicina, big data
+                                    </li>
+                                </ul>
+                                <div class="more-info" (click)="rotate('1')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg></span>
+                                    <p>Volver</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container col-9 col-sm-5 col-md-5 col-lg-3 mx-1 my-4">
+                    <div class="card">
+                        <div class="f front">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/836628917275459654/1024887934178046033/PabloAlexanderReyes.jpeg">
+                            <div class="card-body">
+                                <h5 class="card-title">Pablo Reyes, PhD.</h5>
+                                <p class="card-text">Investigador científico en el Hospital Universitario San Ignacio
+                                </p>
+                                <div class="more-info" (click)="rotate('2')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg></span>
+                                    <p>Mas información</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f back">
+                            <div class="card-back-body">
+                                <h5 class="card-title">Experiencia</h5>
+
+                                <ul>
+                                    <li>Universidad Nacional de Colombia – Psicólogo.</li>
+                                    <li>Universidad Nacional de Colombia – Máster en neurociencias.</li>
+                                    <li>Pontificia Universidad Javeriana – Doctorado en Ingeniería .</li>
+                                </ul>
+
+                                <h5 class="card-title">Áreas de investigación</h5>
+                                <ul>
+                                    <li>Neuropsicología.</li>
+                                    <li>Investigación clínica.</li>
+                                    <li>Neuroimágenes.</li>
+                                </ul>
+
+                                <div class="more-info" (click)="rotate('2')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg></span>
+                                    <p>Volver</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container col-9 col-sm-5 col-md-5 col-lg-3 mx-1 my-4">
+                    <div class="card">
+                        <div class="f front">
+                            <img
+                                src="https://drive.google.com/uc?export=view&id=1aBjc373e2nnkayl7tUnfpT3JYe6SR0lT">
+                            <div class="card-body">
+                                <h5 class="card-title">Leonardo Florez, PhD.</h5>
+                                <p class="card-text">Profesor titular Pontificia Universidad Javeriana</p>
+                                <div class="more-info" (click)="rotate('3')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg></span>
+                                    <p>Mas información</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f back">
+                            <div class="card-back-body">
+                                <h5 class="card-title">Experiencia</h5>
+                                <ul>
+                                    <li>Pregrado en ingeniería de sistemas y computación</li>
+                                    <li>Master en ingeniería de sistemas y computación</li>
+                                    <li>Maestría - Diplôme d'études approfondies - Images et Systèmes</li>
+                                    <li>Doctorado - Images et Systèmes</li>
+                                </ul>
+                                <h5 class="card-title">Áreas de investigación</h5>
+                                <ul>
+                                    <li>Procesamiento de imágenes </li>
+                                    <li>Visión computacional </li>
+                                    <li>Machine Learning </li>
+                                </ul>
+                                <div class="more-info" (click)="rotate('3')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg></span>
+                                    <p>Volver</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container col-9 col-sm-5 col-md-5 col-lg-3 mx-1 my-4">
+                    <div class="card">
+                        <div class="f front">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/836628917275459654/1027418880391516171/unknown.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Sandra Belalcázar Rey, MD.</h5>
+                                <p class="card-text">Médica Cirujana Universidad del Rosario</p>
+                                <div class="more-info" (click)="rotate('4')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg></span>
+                                    <p>Mas información</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f back">
+                            <div class="card-back-body">
+                                <h5 class="card-title">Experiencia</h5>
+                                <ul>
+                                    <li>Oftalmóloga: Fundación Universitaria de Ciencias de la Salud. FUCS</li>
+                                    <li>Especialista en Glaucoma: Universidad Militar Nueva Granada</li>
+                                    <li>Jefe de la Clínica de Glaucoma Fundación Oftalmológica Nacional</li>
+                                    <li>Ex-Presidente de Grupo Colombiano de Trabajo Sobre Glaucoma - GlaucomaColombia
+                                    </li>
+                                    <li>Miembro Sociedad Latinoamericana de Glaucoma</li>
+                                </ul>
+                                <h5 class="card-title">Áreas de investigación</h5>
+                                <ul>
+                                    <li>Inteligencia Artificial en diagnóstico de Glaucoma</li>
+                                    <li>Enfermedad por Cierre angular</li>
+                                    <li>Adherencia al tratamiento en Glaucoma</li>
+                                </ul>
+                                <div class="more-info" (click)="rotate('4')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg></span>
+                                    <p>Volver</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container col-9 col-sm-5 col-md-5 col-lg-3 mx-1 my-4">
+                    <div class="card">
+                        <div class="f front">
+                            <img
+                                src="https://cdn.discordapp.com/attachments/836628917275459654/1029219637960917034/unknown.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Rafael Andrés González Rivera, Ph.D.</h5>
+                                <p class="card-text">Profesor titular Pontificia Universidad Javeriana</p>
+                                <div class="more-info" (click)="rotate('5')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg></span>
+                                    <p>Mas información</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f back">
+                            <div class="card-back-body">
+                                <h5 class="card-title">Experiencia</h5>
+                                <ul>
+                                    <li>Ingeniero de Sistemas, Pontificia Universidad Javeriana</li>
+                                    <li>Master en ingeniería de sistemas y computación</li>
+                                    <li>Maestría - Diplôme d'études approfondies - Images et Systèmes</li>
+                                    <li>Doctor - Images et Systèmes</li>
+                                </ul>
+                                <h5 class="card-title">Áreas de investigación</h5>
+                                <ul>
+                                    <li>Ingeniería de software</li>
+                                    <li>Tecnología en salud</li>
+                                    <li>Sistemas de información</li>
+                                    <li>Ciencias de la computación</li>
+                                    <li>Simulaciones</li>
+                                </ul>
+                                <div class="more-info" (click)="rotate('5')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg></span>
+                                    <p>Volver</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container col-9 col-sm-5 col-md-5 col-lg-3 mx-1 my-4">
+                    <div class="card">
+                        <div class="f front">
+                            <img
+                                src="https://images-ext-1.discordapp.net/external/juwbieKUR54Rce1dzi81u2dRws-5g70L7q_uKi81jUw/http/cormoran.uis.edu.co/eisi/images/mp/U5559/FMC3.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Fabio Martínez Carrillo, PhD.</h5>
+                                <p class="card-text">Director de <a href="https://bivl2ab.uis.edu.co/"
+                                        target="_blank">BIVL2ab -
+                                        Biomedical Imaging</a>, Vision and Learning Laboratory</p>
+                                <div class="more-info" (click)="rotate('6')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg></span>
+                                    <p>Mas información</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f back">
+                            <div class="card-back-body">
+                                <h5 class="card-title">Experiencia</h5>
+
+                                <ul>
+                                    <li>Universidad de Pamplona – Pregrado Ingeniería Mecatrónica.</li>
+                                    <li>Universidad Nacional de Colombia – Magister en ingeniería biomédica,
+                                        Bioingeniería e ingeniería biomédica.</li>
+                                    <li>Universidad Nacional de Colombia – Doctor en ingeniería de sistemas y
+                                        computación, medical image analysis and video analysis.</li>
+                                </ul>
+
+                                <h5 class="card-title">Áreas de investigación</h5>
+                                <ul>
+                                    <li>Analítica de datos.</li>
+                                    <li>Inteligencia artificial.</li>
+                                    <li>Imágenes médicas.</li>
+                                    <li>Video Analytics.</li>
+                                </ul>
+
+                                <div class="more-info" (click)="rotate('6')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg></span>
+                                    <p>Volver</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container col-9 col-sm-5 col-md-5 col-lg-3 mx-1 my-4">
+                    <div class="card">
+                        <div class="f front">
+                            <img
+                                src="https://images-ext-1.discordapp.net/external/6j8iPPN5MYv4Xki-UHvS-mp8S_e8ey2j48aOqyw3nPk/https/pbs.twimg.com/profile_images/1391792314142666755/CXd-wQL0_400x400.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title">Ángel Alfonso Cruz Roa, PhD.</h5>
+                                <p class="card-text">Profesor asistente de la Universidad de los Llanos</p>
+                                <div class="more-info" (click)="rotate('7')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg></span>
+                                    <p>Mas información</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f back">
+                            <div class="card-back-body">
+                                <h5 class="card-title">Experiencia</h5>
+
+                                <ul>
+                                    <li>Ingeniero de Sistemas, Universidad de los Llanos, Villavicencio, Meta.</li>
+                                    <li>Máster en Ingeniería Biomédica, Universidad Nacional de Colombia, Bogotá,
+                                        Colombia.</li>
+                                    <li>Doctor en Ingeniería de Sistemas, y Computación, Universidad Nacional de
+                                        Colombia, Bogotá, Colombia.</li>
+                                </ul>
+
+                                <h5 class="card-title">Áreas de investigación</h5>
+                                <ul>
+                                    <li>Aprendizaje Automático.</li>
+                                    <li>Análisis de Imágenes.</li>
+                                    <li>Analítica de Datos.</li>
+                                </ul>
+
+                                <div class="more-info" (click)="rotate('7')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg></span>
+                                    <p>Volver</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container col-9 col-sm-5 col-md-5 col-lg-3 mx-1 my-4">
+                    <div class="card">
+                        <div class="f front">
+                            <img
+                                src="https://drive.google.com/uc?export=view&id=1aBjc373e2nnkayl7tUnfpT3JYe6SR0lT">
+                            <div class="card-body">
+                                <h5 class="card-title">Oscar Martínez Bernal, MsC.</h5>
+                                <p class="card-text">Profesor de la Pontificia Universidad Javeriana</p>
+                                <div class="more-info" (click)="rotate('8')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg></span>
+                                    <p>Mas información</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f back">
+                            <div class="card-back-body">
+
+                                <h5 class="card-title">Experiencia</h5>
+                                <ul>
+                                    <li>Pontificia Universidad Javeriana – Pregrado en ingeniería electrónica.</li>
+                                    <li>Pontificia Universidad Javeriana – Máster en ingeniería electrónica.</li>
+                                    <li>Pontificia Universidad Javeriana – Máster en bioingeniería.</li>
+                                </ul>
+                                <h5 class="card-title">Áreas de investigación</h5>
+                                <ul>
+                                    <li>Procesamiento digital de señales biológicas.</li>
+                                    <li>Inteligencia artificial.</li>
+                                    <li>Neurociencia y Ciencia de datos.</li>
+                                    <li>Machine Learning y Big Data.</li>
+                                </ul>
+
+                                <div class="more-info" (click)="rotate('8')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg></span>
+                                    <p>Volver</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container col-9 col-sm-5 col-md-5 col-lg-3 mx-1 my-4">
+                    <div class="card">
+                        <div class="f front">
+                            <img
+                                src="https://drive.google.com/uc?export=view&id=1aBjc373e2nnkayl7tUnfpT3JYe6SR0lT">
+                            <div class="card-body">
+                                <h5 class="card-title">Cecile Gauthier Umaña, MsC.</h5>
+                                <p class="card-text">Profesora de la Pontificia Universidad Javeriana</p>
+                                <div class="more-info" (click)="rotate('9')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg></span>
+                                    <p>Mas información</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f back">
+                            <div class="card-back-body">
+                                <h5 class="card-title">Experiencia</h5>
+                                <ul>
+                                    <li>Ingeniera electrónica - Universidad de los Andes.</li>
+                                    <li>Máster en Ingeniería Electrónica - Universidad de los Andes.</li>
+                                    <li>Candidata a doctora en Ciencias Biomédicas - Universidad del Rosario.</li>
+                                </ul>
+                                <h5 class="card-title">Áreas de investigación</h5>
+                                <ul>
+                                    <li>Ciencias Médicas y de la Salud, Medicina Básica y Neurociencias.</li>
+                                </ul>
+                                <div class="more-info" (click)="rotate('9')">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg></span>
+                                    <p>Volver</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <article id="cronograma">
+        <div class="container-layout container-fluid px-4 py-5 w-100 justify-content-center">
+
+            <div id="title-layout" class="row pb-4">
+                <h1 id="title">CRONOGRAMA</h1>
+            </div>
+
+            <div id="activities-layout" class="row justify-content-around">
+
+                <div class="col-12 col-md-5">
+
+                    <div class="activity-layout pb-4">
+                        <h6 class="date">19 octubre 2022 - 17:00</h6>
+                        <h5 class="name-activity">Discurso de apertura</h5>
+                        <p class="description">A cargo de la directora de investigación de la universidad, Alexandra
+                            Pomares Quimbaya, Ph.D.</p>
+                    </div>
+
+                    <div class="activity-layout pb-4">
+                        <h6 class="date">19 octubre 2022 - 17:10</h6>
+                        <h5 class="name-activity">Predicción de tiempo quirúrgico mediante algoritmos de aprendizaje de
+                            máquina, para la estimación del uso de las salas de cirugía que apoye la gestión de recursos
+                            físicos hospitalarios</h5>
+                        <p class="description">A cargo de Oscar Martínez Bernal, MsC.</p>
+                    </div>
+
+                    <div class="activity-layout pb-4">
+                        <h6 class="date">19 octubre 2022 - 18:10</h6>
+                        <h5 class="name-activity">Aprendizaje de máquina como apoyo al diagnóstico de imágenes médicas
+                        </h5>
+                        <p class="description">A cargo de Andrea del Pilar Rueda Olarte, Ph.D.</p>
+                    </div>
+
+                    <div class="activity-layout pb-4">
+                        <h6 class="date">19 octubre 2022 - 19:10</h6>
+                        <h5 class="name-activity">Experiencias en analítica de datos con inteligencia artificial en
+                            contextos científicos, ecológicos, médicos e industriales</h5>
+                        <p class="description">A cargo de Ángel Alfonso Cruz Roa, PhD.</p>
+                    </div>
+
+                    <div class="activity-layout pb-4">
+                        <h6 class="date">19 octubre 2022 - 20:10</h6>
+                        <h5 class="name-activity">Representaciones profundas como mecanismo para el desarrollo de
+                            herramientas de soporte al diagnóstico en salud </h5>
+                        <p class="description">A cargo de Fabio Martínez Carrillo, PhD.</p>
+                    </div>
+
+                    <div class="activity-layout pb-4">
+                        <h6 class="date">19 octubre 2022 - 21:10</h6>
+                        <h5 class="name-activity">Discurso de cierre</h5>
+                        <p class="description">Cierre del primer día</p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-5">
+
+                    <div class="activity-layout pb-4">
+                        <h6 class="date">20 octubre 2022 - 17:00</h6>
+                        <h5 class="name-activity">Discurso de apertura</h5>
+                        <p class="description">A cargo del decano de la Facultad de Ingeniería, Lope Hugo Barrero
+                            Solano, Sc.D.</p>
+                    </div>
+
+                    <div class="activity-layout pb-4">
+                        <h6 class="date">20 octubre 2022 - 17:10</h6>
+                        <h5 class="name-activity">Inteligencia artificial para la Determinación del Daño del Nervio
+                            óptico por Glaucoma</h5>
+                        <p class="description">A cargo de Leonardo Florez, PhD, Sandra Belalcázar Rey, MD.</p>
+                    </div>
+
+                    <div class="activity-layout pb-4">
+                        <h6 class="date">20 octubre 2022 - 18:10</h6>
+                        <h5 class="name-activity">IA aplicado a neurociencias </h5>
+                        <p class="description">A cargo de Cecile Gauthier, MsC.</p>
+                    </div>
+
+                    <div class="activity-layout pb-4">
+                        <h6 class="date">20 octubre 2022 - 19:10</h6>
+                        <h5 class="name-activity">Aplicación de redes neuronales artificiales aplicadas a la
+                            clasificación y segmentación de la aorta torácica y sus placas de calcio en imágenes de
+                            tomografía computada</h5>
+                        <p class="description">A cargo de Federico Guilenea.</p>
+                    </div>
+
+                    <div class="activity-layout pb-4">
+                        <h6 class="date">20 octubre 2022 - 19:40</h6>
+                        <h5 class="name-activity">Casos de informática en salud de la Javeriana</h5>
+                        <p class="description">A cargo de Rafael Andrés González Rivera, Ph.D.</p>
+                    </div>
+
+                    <div class="activity-layout pb-4">
+                        <h6 class="date">20 octubre 2022 - 20:10</h6>
+                        <h5 class="name-activity">Retos en la implementación de la IA en imágenes médicas: de la
+                            eficiencia a la confianza.</h5>
+                        <p class="description">A cargo de Pablo Reyes, PhD.</p>
+                    </div>
+
+                    <div class="activity-layout pb-4">
+                        <h6 class="date">20 octubre 2022 - 21:10</h6>
+                        <h5 class="name-activity">Discurso de cierre</h5>
+                        <p class="description">Cierre del evento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article id="equipos">
+        <div class="container-layout container-fluid px-1 py-5 w-100">
+
+            <div id="title-layout" class="row">
+                <h1 id="title">EQUIPOS ORGANIZADORES</h1>
+            </div>
+
+            <div id="teams-info" class="row">
+                <p>Estudiantes de últimos semestres de la Pontificia Universidad Javeriana. Puedes ver a los integrantes de cada equipo dándole click en la tarjeta que desees.</p>
+            </div>
+
+            <div class="main-layout pt-4">
+
+                <div class="card-team" id="divGerencia" (click)="expand('divGerencia')">
+
+                    <div class="front">
+                        <img class="icon-front" src="https://cdn-icons-png.flaticon.com/512/1283/1283342.png">
+                        <h3 class="title-front">Dirección</h3>
+                    </div>
+
+                    <div class="back d-none">
+                        <h3 class="title-back pt-3">Integrantes</h3>
+                        <div class="members-layout">
+                            <div class="row justify-content-around">
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1GHZfZ2gKBXwqF286dJ3NX3vtj0v9HXXt">
+                                    <h3 class="member-name">Kamila Obregon</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1aBjc373e2nnkayl7tUnfpT3JYe6SR0lT">
+                                    <h3 class="member-name">Maria Alejandra Suarez Reyes</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1OoWO8vEi-Li8Du4VdKQFk7bm-Z24uac3">
+                                    <h3 class="member-name">Alejandro Morales</h3>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-around">
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1ptw6MmqXWHmfTICSaEI9fdl6a51N0n6d">
+                                    <h3 class="member-name">Cristian Da Camara</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1jyM3Q075tGzupC06gOJYa4_aCDophUXN">
+                                    <h3 class="member-name">Carolina Molina</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1AgqrIGIst1ivZcE4_NtpwTfzT1KynUm5">
+                                    <h3 class="member-name">Laura Rozo</h3>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-around">
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1iKNAXTdLzmPRd9Hg3KJKGdOiei-ypVFM">
+                                    <h3 class="member-name">Stefania García</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src=" https://drive.google.com/uc?export=view&id=1rABqv5gpa1m8yf7oOc9NUOS9EjvEKiwM">
+                                    <h3 class="member-name">Julian Rizo</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1aBjc373e2nnkayl7tUnfpT3JYe6SR0lT">
+                                    <h3 class="member-name">Javier Flechas</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-team" id="divTecnologias" (click)="expand('divTecnologias')">
+                    <div class="front">
+                        <img class="icon-front" src="https://cdn-icons-png.flaticon.com/512/2920/2920249.png">
+                        <h3 class="title-front">Tecnología</h3>
+                    </div>
+
+                    <div class="back d-none">
+                        <h3 class="title-back pt-4">Integrantes</h3>
+                        <div class="members-layout">
+                            <div class="row justify-content-around">
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1jbH8fwWaaOoAuYts0V3nJKjckwCO57pK">
+                                    <h3 class="member-name">Fabian Olarte</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1JM4Wj5AMNfYvlTPgRMC8896B8dJsD0JK">
+                                    <h3 class="member-name">Osman Beltran Murcia</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1D5bn14hKnlJT6dTSQNnUgc__ug5S5HQZ">
+                                    <h3 class="member-name">Pablo Santander</h3>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-around">
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1TgJukCAXxQP2eZ1Xw0cDY7H2Z7cDBD9P">
+                                    <h3 class="member-name">Loui Gerard Velez</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1mY7eixbXLCa60Z8m8lR5JoI5cZ1tpJ5n">
+                                    <h3 class="member-name">Julian Carrillo</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=10Eeo01sMZqScPdFWFzqy68CR0I4-mUtt">
+                                    <h3 class="member-name">Daniel Eduardo Castellanos Tromba</h3>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-around">
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1A63_VnG2ny16tCHVZ-tXjDkpTKNSZuDD">
+                                    <h3 class="member-name">Andrés Felipe Ramírez</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1jpRJg2MqtX2dAXFoPUMy5Z4xKCNKbuDX">
+                                    <h3 class="member-name">Andres Felipe Giraldo</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1kkh-ie_Vx7CpdwIrtuO4lfnJFGtQiD-N">
+                                    <h3 class="member-name">Diego Gartner</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-team" id="divAdministracion" (click)="expand('divAdministracion')">
+                    <div class="front">
+                        <img class="icon-front" src="https://cdn-icons-png.flaticon.com/512/2199/2199962.png">
+                        <h3 class="title-front">Administración</h3>
+                    </div>
+
+                    <div class="back d-none">
+                        <h3 class="title-back pt-4">Integrantes</h3>
+                        <div class="members-layout">
+                            <div class="row justify-content-around">
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1EMPqURACxQOfVSP_J5oFnqz-erPqzbTX">
+                                    <h3 class="member-name">Santiago Fernández Becerra</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1ykNlgVXaN0v3bAoyccw1U2myghN8asex">
+                                    <h3 class="member-name">Diana Chaparro</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=16y5fPvumc0fBuBLHRXiGv0MqFuXYkq8a">
+                                    <h3 class="member-name">Santiago Barbosa Nieto</h3>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-around">
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1ASacIveEc8qNVMCYe0S4jP-ButIkxl8B">
+                                    <h3 class="member-name">Miguel Avila</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1RCByg-lUu1dj-O2pOxozcpKY0sfItIMH">
+                                    <h3 class="member-name">Andrés José Rodríguez Ortega</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1Gv6AZ4fwnpi5-3EeOQm5aiBQvXUi0RRW">
+                                    <h3 class="member-name">Nicolas Ramos Bohorquez</h3>
+                                </div>
+
+
+                            </div>
+
+                            <div class="row justify-content-center">
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1aBjc373e2nnkayl7tUnfpT3JYe6SR0lT">
+                                    <h3 class="member-name">Santiago Meneses</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1aBjc373e2nnkayl7tUnfpT3JYe6SR0lT">
+                                    <h3 class="member-name">Abril Cano Castro</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-team" id="divMercadeo" (click)="expand('divMercadeo')">
+                    <div class="front">
+                        <img class="icon-front" src="https://cdn-icons-png.flaticon.com/512/6104/6104397.png">
+                        <h3 class="title-front">Mercadeo</h3>
+                    </div>
+
+                    <div class="back d-none">
+                        <h3 class="title-back pt-4">Integrantes</h3>
+                        <div class="members-layout">
+                            <div class="row justify-content-around">
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1Tihe5rbY5vlHwOW0MUI00hfbRAF0VcXe">
+                                    <h3 class="member-name">Heyling Burgos</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=12OV9SQIaZ55jIcw9GYPy0JHCoXqe42mz">
+                                    <h3 class="member-name">Nicolas Bayona</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1yMj7ZMGCLCaWQZOULvzMnmbqI7u8-FPU">
+                                    <h3 class="member-name">Santiago Diaz</h3>
+                                </div>
+
+                            </div>
+
+                            <div class="row justify-content-around">
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1lZEZe1CJ7fCM3AZixNrZfdrfpPaR_txg">
+                                    <h3 class="member-name">Marco Valencia</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1I2WRlHehAod4lw_uu11yXUxcZoX_4RUW">
+                                    <h3 class="member-name">Felipe Ariza</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1CQEgRCctyXKiv-U5IayZJ64DLdu9wE-S">
+                                    <h3 class="member-name">Camilo García</h3>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-around">
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1MBzsd9vAu0LG1VtVTfBcaagfqeEEHBQ0">
+                                    <h3 class="member-name">Maria José Niño</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1aBjc373e2nnkayl7tUnfpT3JYe6SR0lT">
+                                    <h3 class="member-name">Alejandro Cardozo</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1aBjc373e2nnkayl7tUnfpT3JYe6SR0lT">
+                                    <h3 class="member-name">William Rodriguez</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-team" id="divLogistica" (click)="expand('divLogistica')">
+                    <div class="front">
+                        <img class="icon-front" src="https://cdn-icons-png.flaticon.com/512/1085/1085842.png">
+                        <h3 class="title-front">Logística</h3>
+                    </div>
+
+                    <div class="back d-none">
+                        <h3 class="title-back pt-4">Integrantes</h3>
+                        <div class="members-layout">
+                            <div class="row justify-content-around">
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1bW6rwP8YQxqZQa7vdg-QMoejDE5bQJqQ">
+                                    <h3 class="member-name">Andrés Felipe Vásquez Rendón</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1hF3eHHSA451toESZIZEoFZQwWvny2EbD">
+                                    <h3 class="member-name">Johan Mateo Rosero</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1okm5QD7JRcZNXtdbqElCnvelA3trHjSA">
+                                    <h3 class="member-name">Steban Vanegas</h3>
+                                </div>
+
+                            </div>
+
+                            <div class="row justify-content-around">
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1HY5517qQ6zRZAJXQZKF8iCb5vgHTIPw0">
+                                    <h3 class="member-name">Jorge Luis Esposito</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1qxBcqxzw1YDnuWbTiK3MndW33UT3NWYO">
+                                    <h3 class="member-name">David Antolínez</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1r3R8Kjmu7cz6khn29Y--fSbN1sK3wbBu">
+                                    <h3 class="member-name">Diana Sofía Carrillo</h3>
+                                </div>
+
+                            </div>
+
+                            <div class="row justify-content-center">
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1nrh2UfdO6t7sT7Raspr2Ce-xq3kG-Nze">
+                                    <h3 class="member-name">David González</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1aBjc373e2nnkayl7tUnfpT3JYe6SR0lT">
+                                    <h3 class="member-name">Juan Esteban Rincon</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-team" id="divOperaciones" (click)="expand('divOperaciones')">
+                    <div class="front">
+                        <img class="icon-front" src="https://cdn-icons-png.flaticon.com/512/1721/1721930.png">
+                        <h3 class="title-front">Operaciones</h3>
+                    </div>
+
+                    <div class="back d-none">
+                        <h3 class="title-back pt-4">Integrantes</h3>
+                        <div class="members-layout">
+                            <div class="row justify-content-around">
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1XtGNVNKwAc59OoY68l94mK2jnyScP6bf">
+                                    <h3 class="member-name">Enrique Gutiérrez</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1kiCtq3y2Uvs4HRRyRKji-34frfH6lOEI">
+                                    <h3 class="member-name">Cristóbal Castrillón</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1oxBJBsIcoyWsNXvakwaCXPEQ3iLuFOgT">
+                                    <h3 class="member-name">David Castillo</h3>
+                                </div>
+
+                            </div>
+
+                            <div class="row justify-content-around">
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1YxjWD6HcI5P8h572i56EpA3jWrKXXLcy">
+                                    <h3 class="member-name">Julián Cárdenas</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1S7owE3FUGSbBC6kFZUnefFZEV0381P4p">
+                                    <h3 class="member-name">Fabián Rojas</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1ebdyi8NQK4mXQI9e6UsAVVcRXsQ7L5Tm">
+                                    <h3 class="member-name">Santiago Burbano</h3>
+                                </div>
+
+                            </div>
+
+                            <div class="row justify-content-center">
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1mQ9Kl3T0yth75C7dMWbzPEQiKoT3f7pS">
+                                    <h3 class="member-name">Santiago Quintana</h3>
+                                </div>
+
+                                <div class="member">
+                                    <img class="member-img"
+                                        src="https://drive.google.com/uc?export=view&id=1aBjc373e2nnkayl7tUnfpT3JYe6SR0lT">
+                                    <h3 class="member-name">Camilo Bustos</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <article id="registro">
+        <div class="container-layout container-fluid px-5 py-5 justify-content-center w-100">
+
+            <div id="title-layout" class="row">
+                <h1 id="title">¡Forma parte del evento!</h1>
+            </div>
+
+            <div id="registro-info" class="row pt-4 pb-3">
+                <p> Para ingresar a la reunión debes ingresar a Teams pulsando en el logo que aparece a continuación.</p>
+            </div>
+
+            <div class="times row justify-content-center d-none">
+                <p class="numbers col-2" id="days"></p>
+                <p class="numbers col-2" id="hours"></p>
+                <p class="numbers col-2" id="mins"></p>
+                <p class="numbers col-2" id="seconds"></p>
+            </div>
+
+            <div id="main-layout" class="row justify-content-center py-2">
+
+                <div id="icon-layout" class="col-12 col-sm-6">
+                    <div class="icon-info-channels row justify-content-center">
+                        <a id="icon-teams" class="icon col-6"
+                            href="https://www.youtube.com/channel/UCzAOlQg6W-maYx3irbSKWMw"
+                            target="_blank">
+                            <img src="../assets/teams.png" alt="" tooltip="Ingresa el evento en teams">
+                        </a>
+
+                        <a id="icon-youtube" class="icon col-6"
+                            href="https://www.youtube.com/channel/UCzAOlQg6W-maYx3irbSKWMw" target="_blank">
+                            <img src="../assets/youtube.png" alt="" tooltip="Ingresa el evento en teams">
+                        </a>
+                    </div>
+                </div>
+
+                <div id="icon-layout" class="col-12 col-sm-6 row">
+                    <div id="icon-javeriana-layout" class="col">
+                        <img id="icon-javeriana" src="../assets/icons/icon-javeriana-2.svg">
+                    </div>
+
+                    <div id="icon-main-layout" class="col">
+                        <img id="icon-main" src="../assets/icons/icon-main.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+</section>
+
+
+<footer id="footer">
+    <div class="container-layout container-fluid row justify-content-around w-100 py-4 px-3">
+
+        <div id="information-layout" class="col-11 col-md-6 d-none">
+            <h5 class="title">Sobre nosotros</h5>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit, mi at
+                pretium
+                euismod, tortor.</p>
+        </div>
+
+        <div id="social-networks-layout" class="col">
+            <!--class="col-11 col-md-6"-->
+            <h5 class="title">Nuestras redes sociales</h5>
+            <div class="icon-social-networks-layout row justify-content-center pt-4">
+                <a id="icon-instagram" class="icon col-2" href="https://www.instagram.com/simposio.vidia/"
+                    target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                </a>
+
+                <a id="icon-facebook" class="icon col-2" href="https://www.facebook.com/Simposio-VIDIA-109920851855440"
+                    target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
